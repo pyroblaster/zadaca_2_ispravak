@@ -12,4 +12,7 @@ class Vorior:Enemy {
     override fun damage(): Int {
         return 5
     }
+    override fun experience(): Int {
+        return 5
+    }
 }

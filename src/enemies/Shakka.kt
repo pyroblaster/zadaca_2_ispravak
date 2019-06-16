@@ -12,4 +12,7 @@ class Shakka:Enemy {
     override fun damage(): Int {
         return 50
     }
+    override fun experience(): Int {
+        return 200
+    }
 }

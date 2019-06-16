@@ -12,4 +12,7 @@ class Rendjer:Enemy {
     override fun damage(): Int {
         return 10
     }
+    override fun experience(): Int {
+        return 10
+    }
 }

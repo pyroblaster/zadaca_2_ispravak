@@ -12,4 +12,7 @@ class Mejdz:Enemy {
     override fun damage(): Int {
         return 15
     }
+    override fun experience(): Int {
+        return 15
+    }
 }

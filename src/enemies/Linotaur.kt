@@ -12,4 +12,7 @@ class Linotaur:Enemy {
     override fun damage(): Int {
         return 100
     }
+    override fun experience(): Int {
+        return 500
+    }
 }

@@ -12,4 +12,8 @@ class Fordcord:Enemy {
     override fun damage(): Int {
         return 25
     }
+
+    override fun experience(): Int {
+        return 100
+    }
 }

@@ -12,4 +12,7 @@ class Toongooz:Enemy {
     override fun damage(): Int {
         return 75
     }
+    override fun experience(): Int {
+        return 300
+    }
 }
