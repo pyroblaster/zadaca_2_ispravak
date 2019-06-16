@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b09a5ff-3143-406a-850a-56457304e6b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/enemies/Enemy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Enemy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Fordcord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Fordcord.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Linotaur.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Linotaur.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Mejdz.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Mejdz.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Rendjer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Rendjer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Shakka.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Shakka.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Toongooz.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Toongooz.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enemies/Vorior.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enemies/Vorior.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions/init.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions/init.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,15 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/character/Paladim.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/character/SecretCharacter.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,11 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enemies/Vorior.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/functions/init.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="626">
+              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+              <folding>
+                <element signature="e#19#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,7 +154,6 @@
         <option value="$PROJECT_DIR$/src/character/Palatim.kt" />
         <option value="$PROJECT_DIR$/src/character/Paladim.kt" />
         <option value="$PROJECT_DIR$/src/game.kt" />
-        <option value="$PROJECT_DIR$/src/functions/init.kt" />
         <option value="$PROJECT_DIR$/src/enemies/Enemy.kt" />
         <option value="$PROJECT_DIR$/src/enemies/Fordcord.kt" />
         <option value="$PROJECT_DIR$/src/enemies/Shakka.kt" />
@@ -167,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/enemies/Mejdz.kt" />
         <option value="$PROJECT_DIR$/src/enemies/Rendjer.kt" />
         <option value="$PROJECT_DIR$/src/enemies/Vorior.kt" />
+        <option value="$PROJECT_DIR$/src/functions/init.kt" />
       </list>
     </option>
   </component>
@@ -443,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/init.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/spells/Spell.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -538,6 +527,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions/init.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="626">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding>
+            <element signature="e#19#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

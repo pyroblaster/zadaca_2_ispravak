@@ -1,6 +1,7 @@
 package functions
 
 import character.*
+import enemies.*
 
 fun welcome() {
     println("Welcome to the World of Whatcraft?!")
@@ -49,3 +50,23 @@ fun chooseClass(name: String): Character {
 }
 
 fun chooseSpell() {}
+
+fun newEnemy():Enemy{
+    val i = (1..3).random()
+    var enemy:Enemy = Vorior()
+    when {
+        i == 1 -> {
+            enemy = Vorior()
+            println("Hi, its me, Vorior, not so might Warrior. :(")
+        }
+        i == 2 -> {
+            enemy = Mejdz()
+            println("I cast when i must...")
+        }
+        i == 3 -> {
+            enemy = Rendjer()
+            println("I've got one arrow for you, and one for me. :O")
+        }
+    }
+    return enemy
+}
