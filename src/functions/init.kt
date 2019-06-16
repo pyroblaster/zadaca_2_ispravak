@@ -13,6 +13,11 @@ fun enterName():String{
 }
 fun chooseClass(name:String):Character{
     println("Choose your class: ")
+    println("Would you like to destroy your enemies using power of mighty Paladim? Then you shall press 1!")
+    println("You like fat dorfs who tank their way into life? Here I am! Press 2!")
+    println("Heal me, heal me! Ready to heal yourself while doing nothin? 3 it is!")
+    println("Team player? Then Palatim is for you, pls 4...")
+
     var i:Int = 0
     val character:Character
     i = readLine()!!.toInt()

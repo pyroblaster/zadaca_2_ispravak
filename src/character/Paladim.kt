@@ -1,7 +1,6 @@
 package character
 
 class Paladim(val name:String):Character {
-    val name1:String = name
     override fun name(): String {
         return name
     }

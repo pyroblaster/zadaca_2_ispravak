@@ -1,7 +1,4 @@
-import character.Paladim
-import functions.chooseClass
-import functions.enterName
-import functions.welcome
+import functions.*
 
 
 fun game(){
