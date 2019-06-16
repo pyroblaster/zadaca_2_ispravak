@@ -1,5 +1,7 @@
 package character
 
+import weapons.Weapon
+
 interface Character{
     fun name():String
     fun type():String
@@ -12,4 +14,5 @@ interface Character{
     fun levelUp()
     fun alive():Boolean
     fun experience():Int
+    fun weapon():Weapon
 }

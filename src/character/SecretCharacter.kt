@@ -1,5 +1,8 @@
 package character
 
+import weapons.SecretWeapon
+import weapons.Weapon
+
 class SecretCharacter(val name:String):Character {
     override fun name(): String {
         return name
@@ -41,5 +44,8 @@ class SecretCharacter(val name:String):Character {
     }
     override fun experience(): Int {
         return 0
+    }
+    override fun weapon(): Weapon {
+        return SecretWeapon()
     }
 }

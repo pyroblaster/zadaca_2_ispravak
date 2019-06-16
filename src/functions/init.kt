@@ -6,6 +6,12 @@ import enemies.*
 fun welcome() {
     println("Welcome to the World of Whatcraft?!")
 }
+fun forestWelcome(){
+    println("I'll teleport you in sec...")
+    Thread.sleep(1500)
+    println("Good, we are here. They call this place Forest, we are gonna kill few minions here and there and if " +
+            "you are good enough we will try to kill might Fordcord, emperor of Forest.")
+}
 
 fun enterName(): String {
     println("Choose your character name: ")
@@ -49,8 +55,6 @@ fun chooseClass(name: String): Character {
     return character
 }
 
-fun chooseSpell() {}
-
 fun newEnemy():Enemy{
     val i = (1..3).random()
     var enemy:Enemy = Vorior()
@@ -70,3 +74,5 @@ fun newEnemy():Enemy{
     }
     return enemy
 }
+
+fun chooseSpell() {}

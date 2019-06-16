@@ -1,5 +1,8 @@
 package character
 
+import weapons.Trashbringer
+import weapons.Weapon
+
 class Palatim(val name:String):Character {
     override fun name(): String {
         return name
@@ -42,5 +45,8 @@ class Palatim(val name:String):Character {
     }
     override fun experience(): Int {
        return 0
+    }
+    override fun weapon(): Weapon {
+        return Trashbringer()
     }
 }
