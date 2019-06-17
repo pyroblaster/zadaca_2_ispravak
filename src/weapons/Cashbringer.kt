@@ -1,6 +1,6 @@
 package weapons
 
-class Cashbringer:Weapon {
+class Cashbringer:Weapon, BaseWeapon(100,78,712,838,1.3f,250,250,250,250) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Cashbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 100
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 78
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class Cashbringer:Weapon {
     override fun name(): String {
         return "Cashbringer"
     }
-
     override fun minDamage(): Int {
-        return 712
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 833
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 1.3f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 250
+        return strength
     }
 
     override fun stamina(): Int {
-        return 250
+        return stamina
     }
 
     override fun agility(): Int {
-        return 250
+        return agility
     }
 
     override fun intellect(): Int {
-        return 250
+        return intellect
     }
 }

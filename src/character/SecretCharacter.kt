@@ -3,41 +3,43 @@ package character
 import weapons.SecretWeapon
 import weapons.Weapon
 
-class SecretCharacter(val name:String):Character {
+class SecretCharacter(val name:String):Character, BaseCharacter("Elon Musk", 999,999,999,999,1) {
+    override var health: Int = 10000 + stamina()*10
     override fun name(): String {
         return name
     }
 
     override fun type(): String {
-        return "Elon Musk"
+        return type
     }
 
     override fun strength(): Int {
-        return 999
+        return strength
     }
 
     override fun stamina(): Int {
-        return 999
+        return stamina
     }
 
     override fun agility(): Int {
-        return 999
+        return agility
     }
 
     override fun intellect(): Int {
-        return 999
+        return intellect
     }
     override fun healthPoints(): Int {
-        return 10000 + stamina()*10
+        return health
     }
     override fun level(): Int {
-        return 0
+        return level
     }
     override fun levelUp() {
-        strength()+100
-        stamina()+100
-        agility()+100
-        intellect()+100
+        strength +=100
+        stamina +=100
+        agility+=100
+        intellect+=100
+        level+=1
     }
     override fun alive() : Boolean {
         return true
@@ -47,5 +49,8 @@ class SecretCharacter(val name:String):Character {
     }
     override fun weapon(): Weapon {
         return SecretWeapon()
+    }
+    override fun healthLeft(health: Int, damage: Int): Int {
+        return health - damage
     }
 }

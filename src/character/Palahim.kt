@@ -3,41 +3,43 @@ package character
 import weapons.Trashbringer
 import weapons.Weapon
 
-class Palahim(val name:String):Character {
+class Palahim(val name:String):Character, BaseCharacter("Palahim", 5,8,3,10,1) {
+    override var health: Int = 30 + stamina()*10
     override fun name(): String {
         return name
     }
 
     override fun type(): String {
-        return "Palahim"
+        return type
     }
 
     override fun strength(): Int {
-        return 5
+        return strength
     }
 
     override fun stamina(): Int {
-        return 8
+        return stamina
     }
 
     override fun agility(): Int {
-        return 3
+        return agility
     }
 
     override fun intellect(): Int {
-        return 10
+        return intellect
     }
     override fun healthPoints(): Int {
-        return 30 + stamina()*10
+        return health
     }
     override fun level(): Int {
-        return 0
+        return level
     }
     override fun levelUp() {
-        strength()+2
-        stamina()+2
-        agility()+2
-        intellect()+2
+        strength +=2
+        stamina +=2
+        agility+=2
+        intellect+=2
+        level+=1
     }
     override fun alive() : Boolean {
         if(healthPoints()>0) return true
@@ -48,5 +50,8 @@ class Palahim(val name:String):Character {
     }
     override fun weapon(): Weapon {
         return Trashbringer()
+    }
+    override fun healthLeft(health: Int, damage: Int): Int {
+        return health - damage
     }
 }

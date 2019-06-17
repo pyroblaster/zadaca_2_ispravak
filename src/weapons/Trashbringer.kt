@@ -1,6 +1,6 @@
 package weapons
 
-class Trashbringer:Weapon {
+class Trashbringer:Weapon,BaseWeapon(82,33,611,653,1.7f,183,300,213,11) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Trashbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 82
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 33
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class Trashbringer:Weapon {
     override fun name(): String {
         return "Trashbringer"
     }
-
     override fun minDamage(): Int {
-        return 611
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 653
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 1.7f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 183
+        return strength
     }
 
     override fun stamina(): Int {
-        return 300
+        return stamina
     }
 
     override fun agility(): Int {
-        return 213
+        return agility
     }
 
     override fun intellect(): Int {
-        return 11
+        return intellect
     }
 }

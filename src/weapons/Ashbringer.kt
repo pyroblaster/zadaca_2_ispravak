@@ -1,6 +1,6 @@
 package weapons
 
-class Ashbringer:Weapon {
+class Ashbringer:Weapon,BaseWeapon(97,38,500,630,3.0f,100,100,100,100) {
     override fun hitDamage(): Int {
        return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Ashbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 97
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 38
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -31,30 +31,30 @@ class Ashbringer:Weapon {
     }
 
     override fun minDamage(): Int {
-        return 500
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-       return 630
+       return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 3.0f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 100
+        return strength
     }
 
     override fun stamina(): Int {
-        return 100
+        return stamina
     }
 
     override fun agility(): Int {
-        return 100
+        return agility
     }
 
     override fun intellect(): Int {
-        return 100
+        return intellect
     }
 }

@@ -1,18 +1,27 @@
 package enemies
 
-class Toongooz:Enemy {
+class Toongooz:Enemy, BaseEnemy("Toongooz", "Boss", 500) {
+    override var health: Int = 300
     override fun name(): String {
-        return "Toongooz"
+        return  name
     }
 
     override fun type(): String {
-        return "Boss"
+        return type
+    }
+
+    override fun health(): Int {
+        return  health
+    }
+
+    override fun experience(): Int {
+        return experience
     }
 
     override fun damage(): Int {
         return 75
     }
-    override fun experience(): Int {
-        return 300
+    override fun healthLeft(health: Int, damage: Int): Int {
+        return health - damage
     }
 }

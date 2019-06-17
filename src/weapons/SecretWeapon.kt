@@ -1,6 +1,6 @@
 package weapons
 
-class SecretWeapon:Weapon {
+class SecretWeapon:Weapon,BaseWeapon(100,100,9999,10000,0.1f,2500,2500,2500,2500) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class SecretWeapon:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 100
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 100
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class SecretWeapon:Weapon {
     override fun name(): String {
         return "Falcon Heavy"
     }
-
     override fun minDamage(): Int {
-        return 10000
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 10000
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 0.1f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 2500
+        return strength
     }
 
     override fun stamina(): Int {
-        return 2500
+        return stamina
     }
 
     override fun agility(): Int {
-        return 2500
+        return agility
     }
 
     override fun intellect(): Int {
-        return 2500
+        return intellect
     }
 }

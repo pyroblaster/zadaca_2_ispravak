@@ -1,6 +1,6 @@
 package weapons
 
-class Bashbringer:Weapon {
+class Bashbringer:Weapon, BaseWeapon(80,19,200,232,2.6f,17,21,6,3) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Bashbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 80
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 19
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -31,30 +31,30 @@ class Bashbringer:Weapon {
     }
 
     override fun minDamage(): Int {
-        return 200
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 232
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 2.6f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 17
+        return strength
     }
 
     override fun stamina(): Int {
-        return 21
+        return stamina
     }
 
     override fun agility(): Int {
-        return 6
+        return agility
     }
 
     override fun intellect(): Int {
-        return 3
+        return intellect
     }
 }

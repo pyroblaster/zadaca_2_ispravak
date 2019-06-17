@@ -1,6 +1,6 @@
 package weapons
 
-class Freshbringer:Weapon {
+class Freshbringer:Weapon, BaseWeapon(63,12,10,22,3.0f,3,4,5,6) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Freshbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 63
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 12
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class Freshbringer:Weapon {
     override fun name(): String {
         return "Freshbringer"
     }
-
     override fun minDamage(): Int {
-        return 10
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 22
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 3.0f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 3
+        return strength
     }
 
     override fun stamina(): Int {
-        return 4
+        return stamina
     }
 
     override fun agility(): Int {
-        return 5
+        return agility
     }
 
     override fun intellect(): Int {
-        return 6
+        return intellect
     }
 }

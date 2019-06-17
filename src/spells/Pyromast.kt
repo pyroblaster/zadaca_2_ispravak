@@ -1,12 +1,12 @@
 package spells
 
-class Pyromast:Spell {
+class Pyromast:Spell,BaseSpell("Fire", 89,23,15,18,1.0f) {
     override fun name(): String {
         return "Pyromast"
     }
 
     override fun type(): String {
-        return "Fire"
+        return type
     }
 
     override fun hitDamage(): Int {
@@ -21,24 +21,23 @@ class Pyromast:Spell {
         if((0..100).random()>hitChance()) return true
         else return false
     }
-
     override fun hitChance(): Int {
-        return 89
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 23
+        return critChance
     }
 
     override fun minDamage(): Int {
-        return 15
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 18
+        return maxDamage
     }
 
     override fun castTime(): Float {
-        return 1.0f
+        return castTime
     }
 }

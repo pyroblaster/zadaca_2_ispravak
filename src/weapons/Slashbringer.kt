@@ -1,6 +1,6 @@
 package weapons
 
-class Slashbringer:Weapon {
+class Slashbringer:Weapon ,BaseWeapon(77,29,112,197,1.9f,12,11,10,9){
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Slashbringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 77
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 29
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class Slashbringer:Weapon {
     override fun name(): String {
         return "Slashbringer"
     }
-
     override fun minDamage(): Int {
-        return 112
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 197
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 1.9f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 12
+        return strength
     }
 
     override fun stamina(): Int {
-        return 11
+        return stamina
     }
 
     override fun agility(): Int {
-        return 10
+        return agility
     }
 
     override fun intellect(): Int {
-        return 9
+        return intellect
     }
 }

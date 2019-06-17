@@ -15,4 +15,6 @@ interface Character{
     fun alive():Boolean
     fun experience():Int
     fun weapon():Weapon
+    fun healthLeft(health: Int, damage:Int):Int
+    var health:Int
 }

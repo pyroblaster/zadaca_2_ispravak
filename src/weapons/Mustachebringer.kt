@@ -1,6 +1,6 @@
 package weapons
 
-class Mustachebringer:Weapon {
+class Mustachebringer:Weapon, BaseWeapon(17,55,71,943,1.0f,31,2,41,17) {
     override fun hitDamage(): Int {
         return (minDamage()..maxDamage()).random()
     }
@@ -15,11 +15,11 @@ class Mustachebringer:Weapon {
     }
 
     override fun hitChance(): Int {
-        return 17
+        return hitChance
     }
 
     override fun critChance(): Int {
-        return 55
+        return critChance
     }
 
     override fun equip(): Boolean {
@@ -29,32 +29,31 @@ class Mustachebringer:Weapon {
     override fun name(): String {
         return "Mustachebringer"
     }
-
     override fun minDamage(): Int {
-        return 71
+        return minDamage
     }
 
     override fun maxDamage(): Int {
-        return 943
+        return maxDamage
     }
 
     override fun weaponSpeed(): Float {
-        return 1.0f
+        return weaponSpeed
     }
 
     override fun strength(): Int {
-        return 31
+        return strength
     }
 
     override fun stamina(): Int {
-        return 2
+        return stamina
     }
 
     override fun agility(): Int {
-        return 41
+        return agility
     }
 
     override fun intellect(): Int {
-        return 17
+        return intellect
     }
 }
