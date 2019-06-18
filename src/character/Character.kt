@@ -1,5 +1,6 @@
 package character
 
+import spells.Spell
 import weapons.Weapon
 
 interface Character{
@@ -14,7 +15,9 @@ interface Character{
     fun levelUp()
     fun alive():Boolean
     fun experience():Int
+    fun onKill(exp:Int)
     fun weapon():Weapon
+    fun spell():Spell
     fun healthLeft(health: Int, damage:Int):Int
     var health:Int
 }

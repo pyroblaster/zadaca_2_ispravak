@@ -1,9 +1,21 @@
 package character
 
+import spells.Pyroblast
+import spells.Pyrocast
+import spells.Spell
 import weapons.Trashbringer
 import weapons.Weapon
 
-class Palagrim(val name:String):Character, BaseCharacter("Palagrim", 10,10,5,5,1) {
+class Palagrim(val name:String):Character, BaseCharacter("Palagrim", 10,10,5,5,1,0) {
+    override fun spell(): Spell {
+        return Pyrocast()
+    }
+    override fun onKill(exp: Int) {
+        experience = experience + exp
+        experience()
+    }
+
+
     override var health: Int = 50 + stamina()*10
     override fun name(): String {
         return name
@@ -45,8 +57,9 @@ class Palagrim(val name:String):Character, BaseCharacter("Palagrim", 10,10,5,5,1
         if(healthPoints()>0) return true
         else return false
     }
-    override fun experience(): Int {
-        return 0
+    override fun experience():Int {
+        if (experience%1==0) levelUp()
+        return experience
     }
     override fun weapon(): Weapon {
         return Trashbringer()

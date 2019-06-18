@@ -1,9 +1,20 @@
 package character
 
+import spells.Pyroblast
+import spells.Spell
 import weapons.Trashbringer
 import weapons.Weapon
 
-class Paladim(val name:String):Character, BaseCharacter("Paladim", 5,3,4,2,1) {
+class Paladim(val name:String):Character, BaseCharacter("Paladim", 5,3,4,2,1,0) {
+    override fun spell(): Spell {
+        return Pyroblast()
+    }
+
+    override fun onKill(exp: Int) {
+        experience = experience + exp
+        experience()
+    }
+
     override var health: Int = 20 + stamina()*10
     override fun name(): String {
         return name
@@ -45,8 +56,9 @@ class Paladim(val name:String):Character, BaseCharacter("Paladim", 5,3,4,2,1) {
         if(healthPoints()>0) return true
         else return false
     }
-    override fun experience(): Int {
-        return 0
+    override fun experience():Int {
+        if (experience%1==0) levelUp()
+        return experience
     }
     override fun weapon(): Weapon {
        return Trashbringer()

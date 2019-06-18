@@ -74,5 +74,3 @@ fun newEnemy():Enemy{
     }
     return enemy
 }
-
-fun chooseSpell() {}

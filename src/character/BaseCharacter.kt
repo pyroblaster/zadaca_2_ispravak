@@ -6,5 +6,6 @@ abstract class BaseCharacter(
     var stamina:Int,
     var agility:Int,
     var intellect:Int,
-    var level:Int
+    var level:Int,
+    var experience:Int
 )
